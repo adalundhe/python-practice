@@ -30,7 +30,7 @@ current_path = pathlib.Path(current_directory)
 for found_file in current_path.rglob("test*.txt"):
     file_info = found_file.stat()
 
-# Finally, we need to add the conditional that checks that the access time of the file at
+# Finally, we need to add the conditional that checks that the modified time of the file at
 # the found path is newer than our time threshold of 60 days:
 
 
@@ -39,7 +39,7 @@ current_path = pathlib.Path(current_directory)
 for found_file in current_path.rglob("test*.txt"):
     file_info = found_file.stat()
 
-    if file_info.st_atime > time_threshold:
-        print(found_file.name, 'is a .txt file starting with test accessed at',file_info.st_atime)
+    if file_info.st_mtime > time_threshold:
+        print(found_file.name, 'is a .txt file starting with test modified at',file_info.st_atime)
 
 print('\n')

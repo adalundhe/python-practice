@@ -16,6 +16,8 @@ path_exists = os.path.exists(path)
 if not path_exists:
     os.mkdir(path)
 
+path_exists = os.path.exists(path)
+
 assert path_exists
 
 # NOTE: Calls to os.mkdir() will NOT recursively create directories. That is to say,

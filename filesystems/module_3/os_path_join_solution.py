@@ -11,7 +11,7 @@ import os
 # For example:
 
 search_path = os.path.join(
-   os.path.join(),
+   os.getcwd(),
    "example_directory"
 )
 

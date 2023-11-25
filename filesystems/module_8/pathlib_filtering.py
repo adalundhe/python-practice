@@ -38,7 +38,7 @@ for filepath in path.rglob("test*.txt"):
 
 
 # Knowing what we know now, extend the code below such that only .txt files
-# starting with "test" and having been accessed (having an access time newer than)
+# starting with "test" and having been modified (having an modified time newer than)
 # within the past 60 days.
 
 current_directory = os.getcwd()
