@@ -40,6 +40,6 @@ for found_file in current_path.rglob("test*.txt"):
     file_info = found_file.stat()
 
     if file_info.st_mtime > time_threshold:
-        print(found_file.name, 'is a .txt file starting with test modified at',file_info.st_atime)
+        print(found_file.name, 'is a .txt file starting with test modified at',file_info.st_mtime)
 
 print('\n')
