@@ -30,4 +30,4 @@ Each challenge contains:
 - `tests.py`: Quick tests/checks making sure the output of your solution matches what's expected.
 - `reset.py`: resets that challenge, including all existing files and or files/directories/data/etc. you've created. This means existing files or data being reverted to their original state, and any files or data you've created being lost. However, any changes you've made to that challenge's `challenge.py` file will <i>not</i> be reverted.
 
-Challenges are designed to push you by presenting questions closer to what you might find in an actual interview but still remain a fun learning experience. Try to avoid reading the solution until you've spent a good bit of time trying, and use thr tests to guide the code you write!
+Challenges are designed to push you by presenting questions closer to what you might find in an actual interview but still remain a fun learning experience. Try to avoid reading the solution until you've spent a good bit of time trying, and use the tests to guide the code you write!
